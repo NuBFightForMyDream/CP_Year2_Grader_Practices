@@ -8,6 +8,7 @@ vector<string> punch(vector<string> &v, vector<string>::iterator it,int k) {
     
 }
 int main() {
+    // input info 
     int n,j,k;
     cin >> n >> j >> k;
  

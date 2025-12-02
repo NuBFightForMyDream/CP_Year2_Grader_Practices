@@ -29,7 +29,7 @@ int main() {
     sort( dance_difference.begin() , dance_difference.end() ) ; // sort with iterator first and end 
 
     // nested for loop , check perfect pair -> NOT WORK (60/100) 
-    // using O(n log n) is safer : binary search or noพทal search
+    // using O(n log n) is safer : binary search or normal search
     long long perfect_dance_couple = 0 ; 
     
     for (int i = 0; i < dancer_pair; i++) {
@@ -39,7 +39,7 @@ int main() {
             dance_difference.begin() + i + 1, // เริ่มค้นหาจากตำแหน่งถัดไป
             dance_difference.end(),           // ค้นหาไปจนสุดเวกเตอร์
             -dance_difference[i]              // ค่าที่ใช้เปรียบเทียบ -> check if dance[i] > -dance[j] 
-            // so find dance[j] by > -dnace[i] 
+            // so find dance[j] by > -dance[i] 
         );
         
         // calculate difference to end 

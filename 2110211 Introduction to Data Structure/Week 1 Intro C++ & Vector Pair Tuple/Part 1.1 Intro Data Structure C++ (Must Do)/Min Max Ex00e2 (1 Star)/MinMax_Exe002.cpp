@@ -6,11 +6,6 @@
 # include <string>
 using namespace std ; 
 
-// define function finding max in matrix
-int find_max_in_2d_array( int matrix[1000][1000] , int row , int col) { // size from parameter doesnt affect
-    return 0 ; 
-}
-
 int main() {
     // input info 
     int row_total , col_total ; cin >> row_total >> col_total ; 
